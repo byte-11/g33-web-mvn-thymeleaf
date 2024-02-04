@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>No Operation Token</title>
+</head>
+<body>
+    <h4 th:text="${isOk} ? ${isOk} : 'It is not OK'"></h4>
+    <h4 th:text="${isOk} ? _">It is not OK</h4>
+</body>
+</html>

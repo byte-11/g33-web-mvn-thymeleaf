@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Parameters</title>
+</head>
+<body>
+    <ul>
+        <li th:text="${post.id}"></li>
+        <li th:text="${post.title}"></li>
+        <li th:text="${post.context}"></li>
+        <li th:text="${post.author}"></li>
+        <li th:text="${post.publishedTime}"></li>
+    </ul>
+    <br>
+    <ul th:object="${post}">
+        <li th:text="*{id}"></li>
+        <li th:text="*{title}"></li>
+        <li th:text="*{context}"></li>
+        <li th:text="*{author}"></li>
+        <li th:text="*{publishedTime}"></li>
+    </ul>
+</body>
+</html>

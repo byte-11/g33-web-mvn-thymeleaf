@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch</title>
+</head>
+<body>
+<div data-th-with="n=10">
+    <h5 th:if="${n < 10}">10 < 10 </h5>
+    <h5 th:if="${n > 10}">10 > 10 </h5>
+    <!--        <h5 th:if="${n == 10}">10 == 10 </h5>-->
+    <h5 th:unless="${n != 10}">10 == 10 </h5>
+</div>
+
+<div th:with="role='ASSIGNEE'">
+    <div th:switch="${role}">
+        <h5 th:case="'ADMIN'">ADMIN</h5>
+        <h5 th:case="'USER'">USER</h5>
+        <h5 th:case="'SUPER_ADMIN'">SUPER_ADMIN</h5>
+<!--        <h5 th:default="'No Role'"></h5>-->
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf links</title>
+</head>
+<body>
+<table border="1px solid black">
+    <thead>
+    <td>Id</td>
+    <td>Title</td>
+    </thead>
+    <th:block th:each="post : ${posts}">
+        <tr>
+            <td th:text="${post.id}"></td>
+            <td>
+                <a th:text="${post.title}" th:href="@{/posts(id=${post.id})}"></a>
+            </td>
+        </tr>
+    </th:block>
+</table>
+<br>
+<br>
+<table border="1px solid black">
+    <thead>
+    <td>Id</td>
+    <td>Title</td>
+    </thead>
+    <th:block th:each="post : ${posts}">
+        <tr>
+            <td th:text="${post.id}"></td>
+            <td>
+                <a th:text="${post.title}" th:href="@{/posts/{id}(id=${post.id})}"></a>
+            </td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>
+
+<!--
+    localhost:8080/posts?id=3
+-->

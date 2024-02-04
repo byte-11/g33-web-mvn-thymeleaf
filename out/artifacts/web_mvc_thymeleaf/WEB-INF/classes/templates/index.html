@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link th:replace="fragments::bootsrap_css">
+</head>
+<body>
+<div th:replace="fragments::navbar"></div>
+<h2 th:text="${username}">Home Page</h2>
+<h2 th:text="#{}">Home Page</h2>
+<div th:replace="fragments::bootsrap_js"/>
+</body>
+</html>

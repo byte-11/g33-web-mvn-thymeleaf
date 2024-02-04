@@ -1,0 +1,29 @@
+body{
+    font-family: Consolas, sans-serif;
+    background-color: #e9f3ff;
+}
+
+.btn {
+    display: block;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+}
+
+.btn-danger {
+    background-color: #e87f7f;
+}
+
+.btn-info {
+    background-color: deepskyblue;
+}
+
+.btn-success {
+    background-color: lawngreen;
+}
+
+.btn-warning {
+    background-color: #dbdb25;
+}

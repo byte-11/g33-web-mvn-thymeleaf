@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Literals</title>
+</head>
+<body>
+    <p th:text="'Username: '+${username} + ' age: ' + ${age}  +' gender: ' + ${gender}"></p>
+<!--    <p th:text="${username}+ ' ' + ${age} + ' ' + ${gender}"></p>-->
+    <p th:text="|Username: ${username}  age: ${age} gender: ${gender}|"></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Attributes</title>
+    <link href="../static/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <th:block th:each="button : ${buttons}">
+        <ul>
+            <input th:attr="type='text', placeholder=${button}">
+        </ul>
+    </th:block>
+</div>
+
+<ul>
+    <!--        <th:block th:each="button: ${buttons}">-->
+    <li th:each="button: ${buttons}">
+        <div th:attr="class='btn '" th:attrappend="class='btn-'+${button}" th:text="${button}"></div>
+    </li>
+    <!--        </th:block>-->
+</ul>
+</body>
+</html>

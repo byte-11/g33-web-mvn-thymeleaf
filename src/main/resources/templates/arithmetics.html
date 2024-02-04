@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Arithmetics</title>
+</head>
+<body>
+<div th:with="n=23">
+    <h4 th:text="|${n} + 5 = ${n + 5}|"></h4>
+    <h4 th:text="|${n} - 5 = ${n - 5}|"></h4>
+    <h4 th:text="|${n} * 5 = ${n * 5}|"></h4>
+    <h4 th:text="|${n} / 5 = ${n / 5}|"></h4>
+    <h4 th:text="|${n} % 5 = ${n % 5}|"></h4>
+    <h4 th:text="|${n} mod 5 = ${n mod 5}|"></h4>
+    <h4 th:text="|${n} div 5 = ${n div 5}|"></h4>
+</div>
+</body>
+</html>
